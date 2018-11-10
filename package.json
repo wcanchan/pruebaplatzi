@@ -1,0 +1,16 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "ejemplo",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "wcanchan",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "mocha": "^5.2.0",
+    "supertest": "^3.3.0"
+  }
+}
