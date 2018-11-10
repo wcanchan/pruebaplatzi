@@ -35,8 +35,8 @@ jobs:
       - run:
           name: Install npm
           command: npm install
-       
+  test:
       # run yarn test
-      - run: 
-          name: Test
-          command: npm test
+    - run: 
+        name: Test
+        command: npm test
