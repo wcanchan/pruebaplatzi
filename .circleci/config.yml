@@ -31,7 +31,7 @@ jobs:
 
       - run:
           name: Install npm wee
-          command: npm install
+          command: sudo npm install
 
       - save_cache:
           paths:
