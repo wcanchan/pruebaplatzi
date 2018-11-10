@@ -30,8 +30,8 @@ jobs:
           - v1-dependencies-
 
       - run:
-          name: Install npm wee
-          command: sudo npm install
+          name: Install npm
+          command: npm install
 
       - save_cache:
           paths:
