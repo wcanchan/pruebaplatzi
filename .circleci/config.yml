@@ -18,7 +18,10 @@ jobs:
 
     steps:
       - checkout
-
+      - run:
+          name: Update npm
+          command: 'sudo npm install -g npm@latest'
+          
       # Download and cache dependencies
       - restore_cache:
           keys:
@@ -26,12 +29,16 @@ jobs:
           # fallback to using the latest cache if no exact match is found
           - v1-dependencies-
 
-      - run: yarn install
+      - run:
+          name: Install npm wee
+          command: npm install
 
       - save_cache:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
         
-      # run tests!
-      - run: yarn test
+      # run yarn test
+      - run: 
+          name: Test
+          command: npm test
