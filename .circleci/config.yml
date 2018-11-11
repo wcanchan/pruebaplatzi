@@ -22,11 +22,8 @@ jobs:
           command: 'sudo npm install -g npm@latest'
 
       - run:
-          name: Install log
-          command: 'sudo npm install -g npmlog'
-      - run:
           name: Install now
-          command: 'sudo npm install -g --unsafe-perm now'
+          command: 'yarn global add now'
 
       - checkout
       - setup_remote_docker
