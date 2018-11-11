@@ -17,8 +17,6 @@ jobs:
     working_directory: ~/repo
 
     steps:
-      - checkout
-      - setup_remote_docker
       - run:
           name: Update npm
           command: 'sudo npm install -g npm@latest'
@@ -27,6 +25,8 @@ jobs:
           name: Install now
           command: 'sudo npm install -g --unsafe-perm now'
 
+      - checkout
+      - setup_remote_docker
       # Download and cache dependencies
       - restore_cache:
           keys:
