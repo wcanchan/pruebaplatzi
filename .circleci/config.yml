@@ -48,7 +48,7 @@ jobs:
 
       - run:
           name: Install now
-          command: 'sudo npm install -g now'
+          command: 'sudo npm install -g now@latest'
 
       - run:
           name: Docker Deployment
