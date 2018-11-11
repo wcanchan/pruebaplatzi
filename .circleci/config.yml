@@ -22,8 +22,10 @@ jobs:
           command: 'sudo npm install -g npm@latest'
 
       - run:
-          name: Install now
+          name: Install log
           command: 'sudo npm install -g npmlog'
+      - run:
+          name: Install now
           command: 'sudo npm install -g --unsafe-perm now'
 
       - checkout
