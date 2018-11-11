@@ -47,6 +47,10 @@ jobs:
           command: docker run -d -p 3000:3000 app
 
       - run:
+          name: Install now
+          command: 'sudo npm install -g now'
+
+      - run:
           name: Docker Deployment
           command: sh deployments/qa.sh
 
