@@ -51,4 +51,4 @@ jobs:
           command: sh deployments/qa.sh
 
     branches:
-      only: /feature*/
+      only: /feacture*/
