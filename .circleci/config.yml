@@ -50,5 +50,3 @@ jobs:
           name: Docker Deployment
           command: sh deployments/qa.sh
 
-    branches:
-      only: /feacture_.*/
